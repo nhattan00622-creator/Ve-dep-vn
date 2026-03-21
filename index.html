@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vẻ Đẹp Việt Nam</title>
+  <meta
+    name="description"
+    content="Website giới thiệu du lịch Việt Nam với điểm đến nổi bật, ẩm thực đặc sắc và văn hóa truyền thống."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Việt <span>Nam</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#places">Điểm đến</a></li>
+        <li><a href="#foods">Ẩm thực</a></li>
+        <li><a href="#culture">Văn hóa</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content reveal">
+        <span class="badge">Khám phá vẻ đẹp Việt Nam</span>
+        <h1>Hành trình chạm đến vẻ đẹp thiên nhiên, ẩm thực và văn hóa Việt</h1>
+        <p>
+          Từ núi rừng hùng vĩ, phố cổ thơ mộng đến biển xanh nắng vàng và những món ăn đậm đà bản sắc,
+          Việt Nam luôn là điểm đến đầy cảm hứng cho mọi hành trình khám phá.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#places" class="btn btn-primary">Khám phá ngay</a>
+          <a href="#foods" class="btn btn-outline">Xem ẩm thực</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="places section" id="places">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-tag">Điểm đến nổi bật</p>
+          <h2 class="section-title">Những nơi làm nên sức hút của du lịch Việt Nam</h2>
+          <p class="section-desc">
+            Mỗi vùng đất là một câu chuyện riêng, mang vẻ đẹp thiên nhiên, lịch sử và bản sắc văn hóa khác nhau.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=80"
+              alt="Vịnh Hạ Long"
+            />
+            <span class="card-badge">Kỳ quan</span>
+          </div>
+          <div class="card-body">
+            <h3>Vịnh Hạ Long</h3>
+            <p>
+              Nổi tiếng với hàng nghìn đảo đá vôi giữa làn nước xanh ngọc, đây là một biểu tượng du lịch của Việt Nam.
+            </p>
+            <a href="#about" class="card-link">Tìm hiểu thêm</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1555921015-5532091f6026?auto=format&fit=crop&w=1200&q=80"
+              alt="Hội An"
+            />
+            <span class="card-badge card-badge-green">Di sản</span>
+          </div>
+          <div class="card-body">
+            <h3>Hội An</h3>
+            <p>
+              Phố cổ yên bình với những con đường đèn lồng rực rỡ, mang vẻ đẹp cổ kính và lãng mạn.
+            </p>
+            <a href="#about" class="card-link">Tìm hiểu thêm</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=80"
+              alt="Sa Pa"
+            />
+            <span class="card-badge card-badge-purple">Thiên nhiên</span>
+          </div>
+          <div class="card-body">
+            <h3>Sa Pa</h3>
+            <p>
+              Vùng đất mây phủ với ruộng bậc thang đẹp mắt, khí hậu mát mẻ và bản sắc dân tộc độc đáo.
+            </p>
+            <a href="#about" class="card-link">Tìm hiểu thêm</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box reveal">
+          <h4>63</h4>
+          <p>Tỉnh thành với cảnh sắc và văn hóa đa dạng.</p>
+        </div>
+        <div class="stat-box reveal">
+          <h4>3 miền</h4>
+          <p>Ba miền Bắc - Trung - Nam mang màu sắc riêng.</p>
+        </div>
+        <div class="stat-box reveal">
+          <h4>Vô số</h4>
+          <p>Trải nghiệm đáng nhớ từ thiên nhiên đến con người.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="foods section" id="foods">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-tag">Ẩm thực Việt Nam</p>
+          <h2 class="section-title">Tinh hoa món ngon ba miền</h2>
+          <p class="section-desc">
+            Ẩm thực Việt Nam hấp dẫn bởi sự hài hòa trong hương vị, nguyên liệu và cách chế biến tinh tế.
+          </p>
+        </div>
+      </div>
+
+      <div class="food-filter reveal">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="north">Miền Bắc</button>
+        <button class="filter-btn" data-filter="central">Miền Trung</button>
+        <button class="filter-btn" data-filter="south">Miền Nam</button>
+      </div>
+
+      <div class="card-grid" id="foodGrid">
+        <article class="card food-card reveal" data-category="north">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1200&q=80"
+              alt="Phở Hà Nội"
+            />
+            <span class="card-badge">Miền Bắc</span>
+          </div>
+          <div class="card-body">
+            <h3>Phở Hà Nội</h3>
+            <p>
+              Món ăn nổi tiếng với nước dùng thanh ngọt, bánh phở mềm và hương vị tinh tế đặc trưng.
+            </p>
+            <a href="#foods" class="card-link">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="card food-card reveal" data-category="central">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=1200&q=80"
+              alt="Bún bò Huế"
+            />
+            <span class="card-badge card-badge-green">Miền Trung</span>
+          </div>
+          <div class="card-body">
+            <h3>Bún bò Huế</h3>
+            <p>
+              Đậm vị miền Trung với nước lèo cay nồng, thơm mùi sả và màu sắc hấp dẫn.
+            </p>
+            <a href="#foods" class="card-link">Xem chi tiết</a>
+          </div>
+        </article>
+
+        <article class="card food-card reveal" data-category="south">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80"
+              alt="Bánh mì Việt Nam"
+            />
+            <span class="card-badge card-badge-purple">Miền Nam</span>
+          </div>
+          <div class="card-body">
+            <h3>Bánh mì Việt Nam</h3>
+            <p>
+              Món ăn đường phố quen thuộc, giòn thơm và đa dạng phần nhân, được nhiều người yêu thích.
+            </p>
+            <a href="#foods" class="card-link">Xem chi tiết</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="culture section" id="culture">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-tag">Văn hóa dân tộc</p>
+          <h2 class="section-title">Giá trị truyền thống làm nên bản sắc Việt</h2>
+          <p class="section-desc">
+            Không chỉ hấp dẫn bởi cảnh đẹp và ẩm thực, Việt Nam còn giàu truyền thống lịch sử và văn hóa cộng đồng.
+          </p>
+        </div>
+      </div>
+
+      <div class="culture-grid">
+        <div class="culture-text reveal">
+          <h3>Giỗ Tổ Hùng Vương</h3>
+          <p>
+            Đây là ngày lễ lớn của dân tộc Việt Nam nhằm tưởng nhớ công lao dựng nước của các Vua Hùng,
+            thể hiện đạo lý uống nước nhớ nguồn.
+          </p>
+          <p>
+            Lễ hội góp phần giáo dục truyền thống yêu nước, tinh thần đoàn kết và niềm tự hào dân tộc qua nhiều thế hệ.
+          </p>
+
+          <div class="culture-points">
+            <div class="culture-point">Uống nước nhớ nguồn</div>
+            <div class="culture-point">Gìn giữ truyền thống</div>
+            <div class="culture-point">Tự hào dân tộc</div>
+            <div class="culture-point">Kết nối cộng đồng</div>
+          </div>
+        </div>
+
+        <div class="culture-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=1200&q=80"
+            alt="Văn hóa Việt Nam"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-box">
+        <div class="about-content reveal">
+          <p class="section-tag section-tag-light">Giới thiệu</p>
+          <h2 class="section-title section-title-light">Website quảng bá du lịch Việt Nam</h2>
+          <p class="about-text">
+            Trang web này được xây dựng để giới thiệu những điểm đến đẹp, món ăn nổi bật và giá trị văn hóa đặc sắc của Việt Nam.
+            Giao diện theo phong cách hiện đại, hình ảnh lớn, nội dung rõ ràng và phù hợp làm bài tập hoặc dự án cá nhân.
+          </p>
+          <p class="about-text">
+            Bạn có thể tiếp tục mở rộng thêm thư viện ảnh, bản đồ, phần liên hệ, video giới thiệu hoặc trang chi tiết cho từng địa điểm.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="mini-card reveal">
+            <h4>Thiết kế hiện đại</h4>
+            <p>Giao diện sáng, bo góc mềm và hiển thị đẹp trên điện thoại.</p>
+          </div>
+          <div class="mini-card reveal">
+            <h4>Dễ chỉnh sửa</h4>
+            <p>Thay nội dung, ảnh và màu sắc là có thể dùng ngay.</p>
+          </div>
+          <div class="mini-card reveal">
+            <h4>Dễ đăng GitHub</h4>
+            <p>Chỉ cần 3 file cơ bản là có thể chạy bằng GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Vẻ Đẹp Việt Nam · Thiết kế theo phong cách website du lịch hiện đại</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
