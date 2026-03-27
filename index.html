@@ -471,5 +471,25 @@
   </div>
 
   <script src="script.js"></script>
+    <!-- MUSIC BUTTON -->
+  <button id="musicToggle" class="floating-btn music-btn" aria-label="Bật/Tắt nhạc">
+    <i class="fa-solid fa-music"></i>
+  </button>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="floating-btn back-top" aria-label="Lên đầu trang">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- IMAGE POPUP -->
+  <div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-image" id="modalImg" src="" alt="Preview">
+  </div>
 </body>
 </html>
