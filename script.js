@@ -230,3 +230,131 @@ contactForm.addEventListener("submit", (e) => {
   alert("Đã gửi thông tin thành công!");
   contactForm.reset();
 });
+/* =========================
+   MEGA PREMIUM FINAL JS
+========================= */
+
+// LOADER
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => {
+    if (loader) loader.classList.add("hide");
+  }, 2200);
+});
+
+// SCROLL PROGRESS
+const scrollProgress = document.getElementById("scrollProgress");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+  if (scrollProgress) {
+    scrollProgress.style.width = progress + "%";
+  }
+});
+
+// BACK TO TOP
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (!backToTop) return;
+  if (window.scrollY > 500) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
+});
+
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+// MUSIC TOGGLE
+const musicBtn = document.getElementById("musicToggle");
+const bgMusic = document.getElementById("bgMusic");
+let isPlaying = false;
+
+if (musicBtn && bgMusic) {
+  musicBtn.addEventListener("click", () => {
+    if (!isPlaying) {
+      bgMusic.play();
+      isPlaying = true;
+      musicBtn.classList.add("active");
+      musicBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    } else {
+      bgMusic.pause();
+      isPlaying = false;
+      musicBtn.classList.remove("active");
+      musicBtn.innerHTML = '<i class="fa-solid fa-music"></i>';
+    }
+  });
+}
+
+// CUSTOM CURSOR
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+window.addEventListener("mousemove", (e) => {
+  if (cursorDot) {
+    cursorDot.style.left = `${e.clientX}px`;
+    cursorDot.style.top = `${e.clientY}px`;
+  }
+
+  if (cursorOutline) {
+    cursorOutline.style.left = `${e.clientX}px`;
+    cursorOutline.style.top = `${e.clientY}px`;
+  }
+});
+
+// POPUP IMAGE
+const zoomableImages = document.querySelectorAll(".zoomable");
+const imageModal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.querySelector(".close-modal");
+
+zoomableImages.forEach(img => {
+  img.addEventListener("click", () => {
+    if (imageModal && modalImg) {
+      imageModal.classList.add("show");
+      modalImg.src = img.src;
+    }
+  });
+});
+
+if (closeModal) {
+  closeModal.addEventListener("click", () => {
+    imageModal.classList.remove("show");
+  });
+}
+
+if (imageModal) {
+  imageModal.addEventListener("click", (e) => {
+    if (e.target === imageModal) {
+      imageModal.classList.remove("show");
+    }
+  });
+}
+
+// COPY SITE BUTTON
+const copyBtn = document.querySelector('.copy-site-btn');
+
+if (copyBtn) {
+  copyBtn.addEventListener('click', () => {
+    const siteLink = copyBtn.getAttribute('data-copy');
+
+    navigator.clipboard.writeText(siteLink).then(() => {
+      const oldText = copyBtn.innerHTML;
+      copyBtn.innerHTML = 'Đã copy ✓';
+
+      setTimeout(() => {
+        copyBtn.innerHTML = oldText;
+      }, 1800);
+    });
+  });
+}
