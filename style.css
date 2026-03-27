@@ -184,20 +184,20 @@ textarea {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 800;
 }
 
 .logo img {
-  width: 48px;
-  height: 48px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
   border-radius: 50%;
-  box-shadow: 0 8px 22px rgba(255, 183, 3, 0.28);
+  box-shadow: 0 6px 16px rgba(255, 183, 3, 0.22);
   background: rgba(255,255,255,0.08);
-  padding: 4px;
+  padding: 3px;
 }
 
 .logo-text {
@@ -207,15 +207,15 @@ textarea {
 }
 
 .logo-text span {
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: #fde68a;
 }
 
 .logo-text strong {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #fff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 
