@@ -1019,3 +1019,21 @@ textarea {
     min-width: 100%;
   }
 }
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  padding: 5px;
+}
+
+.footer-logo h3 {
+  margin-bottom: 6px;
+}
