@@ -25,12 +25,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <div class="loader-ring"></div>
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <img src="logo.jpg" alt="Logo Việt Nam">
+      </div>
       <h2>Vẻ Đẹp Việt Nam</h2>
-      <p>Đang tải trải nghiệm premium plus...</p>
+      <p>Đang mở hành trình khám phá...</p>
+      <div class="loader-bar">
+        <span></span>
+      </div>
     </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- PROGRESS BAR -->
+  <div id="scrollProgress"></div>
+
+  <!-- FLOATING PARTICLES -->
+  <div class="particles-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
   </div>
 
   <div class="scroll-progress" id="scroll-progress"></div>
